@@ -13,20 +13,21 @@
     background-size: 50px 50px;
 }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-        }
-         .profile-photo {
-            position: absolute;
-            right: 460px; /* Aligns the photo to the right edge of the wrapper */
-            top: 100px; /* Aligns the photo to the top edge of the wrapper */
-            border-radius: 60%; /* Makes the image round */
-            width: 110px; /* Adjust size as needed */
-            transform: translate(50%, -50%); /* Adjusts the photo's position to be partially outside the container */
-        }
+       .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    position: relative; /* Makes this the reference point for absolute positioned children */
+}
+
+.profile-photo {
+    position: absolute;
+    right: 20px; /* Adjusts to align with the container's padding */
+    top: 20px; /* Adjusts to align with the container's padding */
+    border-radius: 50%; /* Optional: Makes the image round */
+    width: 100px; /* Adjust size as needed */
+}
         h1, h2 {
             color: #333;
         }
