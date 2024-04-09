@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <title>Research Experiences</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: navy; text-align: center; }
-        .experience { margin-top: 20px; }
-        .title { font-size: 24px; }
-        .content { font-size: 14px; }
-        .image, .poster { margin-top: 15px; }
-        .time-place { margin-top: 10px; font-style: italic; }
-        img { max-width: 100%; height: auto; }
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('path/to/grid_background.png'); /* Update this path to your grid image */
+            background-repeat: repeat;
+        }
+        h1 { 
+            color: navy;
+            text-align: center;
+        }
+        .experience { 
+            margin-top: 20px;
+            overflow: hidden; /* Ensures the floated image is contained within the experience div */
+        }
+        .title { 
+            font-size: 24px;
+        }
+        .content { 
+            font-size: 14px;
+            width: 70%;
+            float: left;
+        }
+        .image, .poster { 
+            float: right;
+            width: 30%;
+            margin-left: 20px;
+        }
+        .time-place { 
+            margin-top: 10px;
+            font-style: italic;
+            clear: both; /* Clears the float, so the time and place are displayed below the content and image */
+        }
+        img { 
+            max-width: 100%;
+            height: auto;
+            display: block; /* Ensures the image does not have extra space below it */
+        }
     </style>
 </head>
 <body>
     <h1>Research Experiences</h1>
     <div class="experience">
         <p class="title">Moiré Patterns in 2D Materials</p>
-        <p class="content">This research explores moiré patterns in two-dimensional superlattices, focusing on the manipulation of these patterns by applying mechanical stress to graphene and hBN layers.</p>
+        <div class="content">
+            <p>This research explores moiré patterns in two-dimensional superlattices, focusing on the manipulation of these patterns by applying mechanical stress to graphene and hBN layers.</p>
+        </div>
+        <div class="image">
+            <p>Research Picture: Moiré Patterns</p>
+            <img src="Research Picture/myPoster.jpg" alt="Research Poster on Moiré Patterns">
+        </div>
         <div class="time-place">
             <p>Time: July 10, 2023 - Present</p>
             <p>Place: Stony Brook University, Department of Physics and Astronomy</p>
         </div>
-        <div class="image">
-            <p>Image: Runchen Li at Research Presentation</p>
-            <img src="path/to/My_Picture.jpg" alt="Runchen Li presenting his research">
-        </div>
-        <div class="poster">
-            <p>Poster: Moiré Patterns Research Poster</p>
-            <img src="path/to/My_Poster.jpg" alt="Research Poster on Moiré Patterns">
-        </div>
     </div>
 </body>
 </html>
-
