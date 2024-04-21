@@ -31,11 +31,6 @@
             margin-left: 20px;
             width: 30%; /* Adjust the width as needed */
         }
-        .image-2 { 
-            float: right;
-            width: 50%; /* Increased the width for a larger image */
-            clear: both; /* Prevents text from wrapping around the image */
-        }
         .time-place { 
             margin-top: 10px;
             font-style: italic;
@@ -53,6 +48,11 @@
         }
         section{
             font-size: 14px;
+        }
+        .image-2 { 
+            float: right;
+            width: 50%; /* Increased the width for a larger image */
+            clear: both; /* Prevents text from wrapping around the image */
         }
     </style>
 </head>
@@ -83,6 +83,10 @@
     </head>
     <div class="research-item">
     <h2>Algae Evolution Algorithm Research</h2>
+          <div class="image-2">
+      <img src="Algae Evolution Algorithm Research Picture/The Algal Revolution.jpg" style="width: 100%;">
+      <p style="text-align: center;">Successfully completed the program using Python</p>
+        </div>
         <div class="content1">
             <p>Objective: The aim of this research is to simulate and analyze the distribution patterns of aquatic algae plants using advanced deep learning algorithms. This study is pivotal for understanding and predicting algal blooms, which have significant environmental and economic impacts.</p>
             <p>Methodology: I contributed to the research by utilizing Python for the development of a simulation model. This model predicts the distribution of algae based on various environmental parameters and biological factors.</p>
@@ -90,10 +94,6 @@
             <h3>Physical Logic</h3>
             <p>Initially, a portion of algae is randomly placed in a lake with varying terrain below a horizontal plane. The algae then undergo first-generation growth and reproduction. Typically, algae in higher terrain grow better and produce more seeds, making their first-generation seeds higher than those in lower terrain areas. Due to algae spore reproduction relying on "biological transfer" and "water flow transfer," in higher terrain, where fish life is more abundant and water flow moves towards lower terrain, the second-generation seeds will disperse from high to low terrain, with parent and offspring distances being relatively far. In contrast, seeds in lower terrain, due to lesser water movement and the physical phenomenon of underwater eddies, will largely perish or propagate towards higher terrain, with parent and offspring distances being relatively close. Since algae compete with each other, there is a limit to the number of algae in a region. After selecting the second generation, the same logical analysis and iteration process is repeated.</p>
          </div>
-        <div class="image-2">
-  <img src="Algae Evolution Algorithm Research Picture/The Algal Revolution.jpg" style="width: 100%;">
-  <p style="text-align: center;">Successfully completed the program using Python</p>
-</div>
         <div class="content1">
             <h3>Mathematical Logic</h3>
             <p>Initially, the quantity of algal plants is considered as the fitness function/fitness value. Random coordinates and points are selected within the area, their corresponding fitness values are calculated and ranked; thereafter, the second generation evolves in order from high to low fitness. That is, points with high fitness will have more points selected around them for the next fitness calculation, with a greater distance from the previous points, while points with low fitness will select points towards the direction of high fitness points, with a smaller distance from the previous points. Additionally, the principle of competition is introduced, meaning that the number of points in an area cannot exceed a threshold value.</p>
